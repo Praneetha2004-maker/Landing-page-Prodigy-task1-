@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Relations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Prodigy-task1.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Coffee Relations</h1>
+        <marquee>coffee heals everything</marquee>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home" class="section" style="display: block;">
+            <article class="post">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d715f9e964ed90001b50cd9/1716778556704-YTEHMQU838FO8BWLVD0V/EssentialsWellness_J%26Jays_CannabisInfusedRecipe_Coffee.png" alt="Butter Coffee">
+                <h2>Boost Your Morning With A Butter Coffee</h2>
+                <p>Whether you're a coffee lover looking to switch up your routine or simply curious about the hype, read on to discover the wonders of butter coffee.</p>
+                <a href="butter.html" class="read-more" target="_blank">Read More</a>
+            </article>
+
+            <article class="post">
+                <img src="https://m.media-amazon.com/images/I/81vGRYUItPL._AC_UF894,1000_QL80_.jpg" alt="Turkish Coffee">
+                <h2>Love Traditions with Turkish Coffee</h2>
+                <p>Turkish coffee helps to balance the strong and intense flavour of this captivating beverage.</p>
+                <a href="turkish.html" class="read-more" target="_blank">Read More</a>
+            </article>
+
+            <article class="post">
+                <img src="https://joffreys.com/cdn/shop/articles/macaroons-and-coffee-2023-03-15-21-15-02-utc-scaled.jpg?v=1709114142" alt="Mother's Coffee Recipe">
+                <h2>A Book of Mother's Coffee Recipe</h2>
+                <p>A recipe book overflowing with love, warmth, and the most delicious coffee creations by moms.</p>
+                <a href="mom.html" class="read-more" target="_blank">Read More</a>
+            </article>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section" style="background-color: #f9f7f1;">
+            <h2>About Us</h2>
+            <p>Welcome to Coffee Relations! We are passionate about coffee and its rich traditions from around the world. Our blog is dedicated to bringing you the latest trends, recipes, and stories related to coffee. Whether you're a coffee connoisseur or just starting your journey, we have something for everyone. Join us as we explore the diverse and vibrant world of coffee.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" style="background-color: #e9e4e0;">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or just want to say hello, feel free to reach out to us! We'd love to hear from you.</p>
+            <form action="mailto:coffee.relations@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coffee Relations. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
